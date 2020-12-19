@@ -4,5 +4,9 @@ module.exports = {
         public: { url: '/', static: true },
         src: { url: '/dist' }
     },
-    plugins: ['@snowpack/plugin-typescript', '@snowpack/plugin-webpack'],
+    plugins: ['@snowpack/plugin-typescript', '@snowpack/plugin-webpack', '@snowpack/plugin-sass'],
+    buildOptions: {
+        out: 'docs',
+        baseUrl: './'
+    }
 }
